@@ -1,0 +1,123 @@
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 5%;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 320px;
+  height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 550px;
+}
+
+.about-text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.about-text p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.ambience {
+  padding: 3rem 5%;
+  background-color: var(--light-bg);
+  text-align: center;
+}
+
+.ambience h2 {
+  margin-bottom: 2rem;
+}
+
+.ambience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ambience-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ambience-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.ambience-card h3 {
+  margin: 1rem 1rem 0.5rem;
+}
+
+.ambience-card p {
+  color: var(--text-light);
+  padding: 0 1rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.hours {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.hours h2 {
+  margin-bottom: 2rem;
+}
+
+.hours-table {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5ddd2;
+  text-align: left;
+}
+
+.hours-table th {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+@media (max-width: 992px) {
+  .about-intro {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ambience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .ambience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
